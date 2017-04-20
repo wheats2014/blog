@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../public/stylesheets/bulma.css">
   </head>
   <body>
-    <div class="container">
+    <div class="container is-fluid">
     <nav class="nav">
       <div class="nav-left">
         <a class="nav-item">
@@ -68,130 +68,120 @@
     </nav>
 
     <div class="columns">
-      <div class="column is-one-quarter">
+      <div class="column is-2">
         <aside class="menu">
           <p class="menu-label">
-            General
+            文章管理
           </p>
           <ul class="menu-list">
-            <li><a>Dashboard</a></li>
-            <li><a>Customers</a></li>
+            <li><a>添加文章</a></li>
+            <li><a>文章列表</a></li>
           </ul>
           <p class="menu-label">
-            Administration
+            分类管理
           </p>
           <ul class="menu-list">
-            <li><a>Team Settings</a></li>
-            <li>
-              <a class="is-active">Manage Your Team</a>
-              <ul>
-                <li><a>Members</a></li>
-                <li><a>Plugins</a></li>
-                <li><a>Add a member</a></li>
-              </ul>
-            </li>
-            <li><a>Invitations</a></li>
-            <li><a>Cloud Storage Environment Settings</a></li>
-            <li><a>Authentication</a></li>
+            <li><a>添加分类</a></li>
+            <li><a>分类列表</a></li>
           </ul>
           <p class="menu-label">
-            Transactions
+            博客设置
           </p>
           <ul class="menu-list">
-            <li><a>Payments</a></li>
-            <li><a>Transfers</a></li>
-            <li><a>Balance</a></li>
+            <li><a>添加用户</a></li>
+            <li><a>用户列表</a></li>
           </ul>
         </aside>
       </div>
 
       <div class="column">
-      <div class="">
+        <div class="">
         <div class="field">
-  <label class="label">Name</label>
-  <p class="control">
-    <input class="input" type="text" placeholder="Text input">
-  </p>
-</div>
+          <label class="label">Name</label>
+          <p class="control">
+            <input class="input" type="text" placeholder="Text input">
+          </p>
+        </div>
 
-<div class="field">
-  <label class="label">Username</label>
-  <p class="control has-icons-left has-icons-right">
-    <input class="input is-success" type="text" placeholder="Text input" value="bulma">
-    <span class="icon is-small is-left">
-      <i class="fa fa-user"></i>
-    </span>
-    <span class="icon is-small is-right">
-      <i class="fa fa-check"></i>
-    </span>
-  </p>
-  <p class="help is-success">This username is available</p>
-</div>
+        <div class="field">
+          <label class="label">Username</label>
+          <p class="control has-icons-left has-icons-right">
+            <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+            <span class="icon is-small is-left">
+              <i class="fa fa-user"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fa fa-check"></i>
+            </span>
+          </p>
+          <p class="help is-success">This username is available</p>
+        </div>
 
-<div class="field">
-  <label class="label">Email</label>
-  <p class="control has-icons-left has-icons-right">
-    <input class="input is-danger" type="text" placeholder="Email input" value="hello@">
-    <span class="icon is-small is-left">
-      <i class="fa fa-envelope"></i>
-    </span>
-    <span class="icon is-small is-right">
-      <i class="fa fa-warning"></i>
-    </span>
-  </p>
-  <p class="help is-danger">This email is invalid</p>
-</div>
+        <div class="field">
+          <label class="label">Email</label>
+          <p class="control has-icons-left has-icons-right">
+            <input class="input is-danger" type="text" placeholder="Email input" value="hello@">
+            <span class="icon is-small is-left">
+              <i class="fa fa-envelope"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fa fa-warning"></i>
+            </span>
+          </p>
+          <p class="help is-danger">This email is invalid</p>
+        </div>
 
-<div class="field">
-  <label class="label">Subject</label>
-  <p class="control">
-    <span class="select">
-      <select>
-        <option>Select dropdown</option>
-        <option>With options</option>
-      </select>
-    </span>
-  </p>
-</div>
+        <div class="field">
+          <label class="label">Subject</label>
+          <p class="control">
+            <span class="select">
+              <select>
+                <option>Select dropdown</option>
+                <option>With options</option>
+              </select>
+            </span>
+          </p>
+        </div>
 
-<div class="field">
-  <label class="label">Message</label>
-  <p class="control">
-    <textarea class="textarea" placeholder="Textarea"></textarea>
-  </p>
-</div>
+            <div class="field">
+              <label class="label">Message</label>
+              <p class="control">
+                <textarea class="textarea" placeholder="Textarea"></textarea>
+              </p>
+            </div>
 
-<div class="field">
-  <p class="control">
-    <label class="checkbox">
-      <input type="checkbox">
-      I agree to the <a href="#">terms and conditions</a>
-    </label>
-  </p>
-</div>
+            <div class="field">
+              <p class="control">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  I agree to the <a href="#">terms and conditions</a>
+                </label>
+              </p>
+            </div>
 
-<div class="field">
-  <p class="control">
-    <label class="radio">
-      <input type="radio" name="question">
-      Yes
-    </label>
-    <label class="radio">
-      <input type="radio" name="question">
-      No
-    </label>
-  </p>
-</div>
+            <div class="field">
+              <p class="control">
+                <label class="radio">
+                  <input type="radio" name="question">
+                  Yes
+                </label>
+                <label class="radio">
+                  <input type="radio" name="question">
+                  No
+                </label>
+              </p>
+            </div>
 
-<div class="field is-grouped">
-  <p class="control">
-    <button class="button is-primary">Submit</button>
-  </p>
-  <p class="control">
-    <button class="button is-link">Cancel</button>
-  </p>
-</div>
-      </div>
+            <div class="field is-grouped">
+              <p class="control">
+                <button class="button is-primary">确定</button>
+              </p>
+              <p class="control">
+                <button class="button">取消</button>
+              </p>
+            </div>
+
+        </div>
       </div>
     </div>
 
