@@ -15,6 +15,8 @@
     "serve-favicon": "~2.4.2"
   },
   "devDependencies": {
+    "cookie-session": "^2.0.0-beta.1",
+    "express-session": "^1.15.2",
     "mysql": "mysqljs/mysql",
     "serve-favicon": "^2.4.2"
   }
