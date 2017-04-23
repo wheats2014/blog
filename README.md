@@ -1,2 +1,2 @@
 # blog
-Wheats and Wang's blog
+Wheats and flame's blog
