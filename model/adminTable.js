@@ -3,10 +3,11 @@
  */
 var connection = require('../database/connection');
 var table = require('../database/table');
-function adminTable(){
 
-    function selectAll(){
-        rows = connection.query('select * from '+table.admin_table);
-        return rows;
+var adminTable = {
+    selectAll: function() {
+        return connection.query('select * from '+table.admin_table);
     }
 }
+
+module.exports = adminTable;
