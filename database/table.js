@@ -1,7 +1,5 @@
 /**
- * Created by Íõº÷ on 2017/4/23.
+ * Created by ï¿½ï¿½ï¿½ï¿½ on 2017/4/23.
  */
-var table = {
-    admin_table:'admin'
-}
+var table = {admin_table : 'user'};
 module.exports = table;
