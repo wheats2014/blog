@@ -382,4 +382,3 @@ article_file_path varchar(255) not null COMMENT '文件路径',
 article_id smallint(5) not null COMMENT '关联文章的id',
 primary key(artcle_file_id)
 )engine=InnoDB default charset=utf8;
-

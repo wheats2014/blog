@@ -1,7 +1,7 @@
 {
   "host" : "localhost",
   "post" : "3306",
-  "database" : "test",
+  "database" : "blog",
   "user" : "root",
   "password" : "3015891"
 }
