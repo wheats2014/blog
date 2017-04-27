@@ -323,6 +323,7 @@ create TABLE admin(
     admin_password varchar(32) not null COMMENT '管理员密码',
     admin_email varchar(128) not null COMMENT '管理员邮箱',
     admin_login_ip varchar(15) not null COMMENT '管理员上次登录ip地址',
+    admin_login_last_time datetime not null COMMENT '管理员最后一次登录时间',
     primary key(admin_id)
 )engine=InnoDB default charset=utf8;
 
