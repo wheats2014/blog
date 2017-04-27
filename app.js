@@ -28,23 +28,18 @@ app.use(cookieSession({
   keys : [ "username" ],
   secret : "session",
   // Cookie Options
-  maxAge : 24 * 60 * 60 * 1000 // 24 hours
+  maxAge : 5000 // 24 hours
 }));
 
-app.use(function(req, res, next) {
-
-  console.log(req.session.username);
-
-  // session 判断
-
-  next();
-});
+app.use(function(req, res, next) { next(); });
 
 app.use('/', index);
 app.use('/users', users);
 
 // 后台登录页面
 app.use('/admin', admin);
+app.use('/admin/login', admin);
+app.use('/admin/article', admin);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
