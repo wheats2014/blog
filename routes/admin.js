@@ -8,6 +8,9 @@ router.get('/', function(req, res, next) { res.render('login'); });
 // 显示分类页面
 router.get('/class', function(req, res, next) { res.render('class_list'); });
 
+// 显示分类添加页面
+router.get('/classAdd', function(req, res, next) { res.render('class_add'); });
+
 // 显示文章页面
 router.get('/article', function(req, res, next) { res.render('article'); });
 

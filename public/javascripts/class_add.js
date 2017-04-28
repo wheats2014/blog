@@ -1,24 +1,20 @@
 /**
   *
-  * 分类添加
+  * 后台登录
   *
   */
 $(document)
     .ready(function() {
-      $("#login-form")
+      $("#class-form")
           .validate({
             errorPlacement : function(error, element) {
               error.addClass('help').appendTo(element.parent().parent());
             },
             errorElement : 'p',
             errorClass : "is-danger",
-            rules : {
-              admin_account : {required : true},
-              admin_password : {required : true}
-            },
+            rules : {sort_article_name : {required : true}},
             messages : {
-              admin_account : {required : "请输入帐号"},
-              admin_password : {required : "请输入密码"}
+              sort_article_name : {required : "请输入分类名称"},
             }
           });
     });

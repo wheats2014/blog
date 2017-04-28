@@ -347,7 +347,8 @@ primary key(module_id)
 CREATE TABLE article_sort (
  sort_article_id mediumint(8) NOT NULL AUTO_INCREMENT COMMENT '文章分类ID',
  sort_article_name varchar(60) NOT NULL COMMENT '分类名称',
- description text NOT NULL COMMENT '分类说明',
+ sort_article_num mediumint(8) NOT NULL COMMENT '分类序号',
+ description text COMMENT '分类说明',
  PRIMARY KEY (sort_article_id)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ;
 
