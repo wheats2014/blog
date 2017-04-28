@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="/stylesheets/bulma.css">
   </head>
   <body>
-
-  <div class="container">
+  <div class="container" style="margin-top:10%">
     <div class="section">
 
       <div class="columns">
@@ -16,7 +15,7 @@
         <form action="/admin/login" method="post" id="login-form">
           <div class="field">
             <p class="control has-icons-left">
-              <input class="input" type="text" placeholder="用户名" name="admin_account" autocomplete="off">
+              <input class="input" type="text" placeholder="帐号" name="admin_account" autocomplete="off">
               <span class="icon is-small is-left">
                 <i class="fa fa-user"></i>
               </span>
@@ -32,9 +31,7 @@
           </div>
           <div class="field">
             <p class="control">
-              <button class="button is-success is-fullwidth">
-                登录
-              </button>
+              <input type="submit" class="button is-success is-fullwidth" value="登录">
             </p>
           </div>
       </form>
@@ -42,8 +39,8 @@
       </div>
     </div>
   </div>
-  <script src="javascripts/lib/jquery-3.2.1.min.js"></script>
-  <script src="javascripts/plugins/jquery.validate.js"></script>
-  <script src="javascripts/login.js"></script>
+  <script src="/javascripts/lib/jquery-3.2.1.min.js"></script>
+  <script src="/javascripts/plugins/jquery.validate.js"></script>
+  <script src="/javascripts/login.js"></script>
   </body>
 </html>

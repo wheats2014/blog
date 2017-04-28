@@ -11,8 +11,7 @@ $(document)
               error.addClass('help').appendTo(element.parent().parent());
             },
             errorElement : 'p',
-            debug : true, //调试模式取消submit的默认提交功能
-            errorClass : "is-danger", //默认为错误的样式类为：error
+            errorClass : "is-danger",
             rules : {
               admin_account : {required : true},
               admin_password : {required : true}

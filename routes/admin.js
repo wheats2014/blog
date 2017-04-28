@@ -5,6 +5,9 @@ var connection = require('../database/connection');
 // 显示登录页面
 router.get('/', function(req, res, next) { res.render('login'); });
 
+// 显示分类页面
+router.get('/class', function(req, res, next) { res.render('class_list'); });
+
 // 显示文章页面
 router.get('/article', function(req, res, next) { res.render('article'); });
 
