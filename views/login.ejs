@@ -13,10 +13,10 @@
 
       <div class="columns">
         <div class="column is-3 is-offset-4">
-        <form action="/admin/login" method="post">
+        <form action="/admin/login" method="post" id="login-form">
           <div class="field">
             <p class="control has-icons-left">
-              <input class="input" type="input" placeholder="用户名" name="admin_account">
+              <input class="input" type="text" placeholder="用户名" name="admin_account">
               <span class="icon is-small is-left">
                 <i class="fa fa-user"></i>
               </span>
@@ -40,9 +40,10 @@
       </form>
         </div>
       </div>
-
-
     </div>
   </div>
+  <script src="javascripts/lib/jquery-3.2.1.min.js"></script>
+  <script src="javascripts/plugins/jquery.validate.js"></script>
+  <script src="javascripts/login.js"></script>
   </body>
 </html>

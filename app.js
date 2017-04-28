@@ -31,13 +31,16 @@ app.use(cookieSession({
   maxAge : 5000 // 24 hours
 }));
 
-app.use(function(req, res, next) { next(); });
-
 app.use('/', index);
-app.use('/users', users);
 
 // 后台登录页面
 app.use('/admin', admin);
+
+app.use(function(req, res, next) {
+  if (res.session.adminAccount) {
+    next();
+  }
+});
 app.use('/admin/login', admin);
 app.use('/admin/article', admin);
 
